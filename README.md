@@ -1,10 +1,15 @@
-﻿@[TOC](目录)
-# 前言
+﻿# 前言
+
 本文是根据[STM32F103+步进电机28BYJ-48+ULN2003 实现简单的正反转demo](https://blog.csdn.net/Ikaros_521/article/details/116598144)这篇文章的拓展，针对此文章的程序进行了STM8S103F3版本的粗略适配，具体细节可以参考这篇文章。
+
 源码参考：
+
 &nbsp;&nbsp;&nbsp;&nbsp;[步进电机28BYJ-48的驱动程序(stm32f103c8t6)](https://blog.csdn.net/qq_17280755/article/details/78459842)
+
 &nbsp;&nbsp;&nbsp;&nbsp;[STM32F103+步进电机28BYJ-48+ULN2003 实现简单的正反转demo](https://blog.csdn.net/Ikaros_521/article/details/116598144)
+
 开发板：STM8S103F3P6 最小系统
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/202105211411340.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0lrYXJvc181MjE=,size_16,color_FFFFFF,t_70)
 
 烧录：正点原子 ST-LINK/V2 ，软件STVP
@@ -12,25 +17,35 @@
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210521140956173.png)
 
 语言：C语言
+
 开发环境：IAR EW For STM8 （官网：[https://www.iar.com/](https://www.iar.com/)）
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210521141010882.png)
 
-**开发板**使用了 LED 步进电机28BYJ-48  ULN2003驱动
+**开发板**使用了 LED TIMER4 步进电机28BYJ-48  ULN2003驱动
+
 ## 代码下载：
+
 [码云](https://gitee.com/ikaros-521/STM8S103F3P6_28BYJ-48_apply_demo1) [GitHub](https://github.com/Ikaros-521/STM8S103F3P6_28BYJ-48_apply_demo1)
+
 ## 功能介绍：
+
 电机正转半圈，翻转LED，延时3秒，电机反转半圈，翻转LED，延时3秒。比stm32版更加简单。
+
 # 参考图
 ## STM8S103F3最小系统原理图
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210521140530237.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0lrYXJvc181MjE=,size_16,color_FFFFFF,t_70)
+
 ## 步进电机28BYJ-48
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210521140640867.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0lrYXJvc181MjE=,size_16,color_FFFFFF,t_70)
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210521140709776.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0lrYXJvc181MjE=,size_16,color_FFFFFF,t_70)
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210521140720613.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0lrYXJvc181MjE=,size_16,color_FFFFFF,t_70)
+
 ## ST-Link/V2
 参考文章：[ST-link/V2引脚定义](https://blog.csdn.net/qq_32693119/article/details/88799879)
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210521150026218.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0lrYXJvc181MjE=,size_16,color_FFFFFF,t_70)
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210521150129399.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0lrYXJvc181MjE=,size_16,color_FFFFFF,t_70)
+
 # 接线
 ## ST-Link/V2
 
@@ -42,15 +57,20 @@ RESET    ——> NRST
 ```
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210521151127112.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0lrYXJvc181MjE=,size_16,color_FFFFFF,t_70)
+
 ## stm8s103f3
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210521151504828.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0lrYXJvc181MjE=,size_16,color_FFFFFF,t_70)
+
 ## 步进电机28BYJ-48+ULN2003
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210521151937737.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0lrYXJvc181MjE=,size_16,color_FFFFFF,t_70)
+
 # 效果图
 运行时需要**拔掉 NRST脚**的接线，不然会一直**复位**。或者 **关闭STVP**程序。
 图片进行过处理，不是实际效果。
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210521153018315.gif#pic_center)
+
 # 工程介绍+烧写
+
 ## 工程结构
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210521153222963.png)
 
@@ -63,11 +83,15 @@ RESET    ——> NRST
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210521153528619.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0lrYXJvc181MjE=,size_16,color_FFFFFF,t_70)
 程序路径
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210521154025988.png)
+
 ## 程序烧写
 ST-LINK -> SWIM -> STM8S103F3
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210521153745472.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0lrYXJvc181MjE=,size_16,color_FFFFFF,t_70)
+
 选择hex程序，进行烧写
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210521153920797.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0lrYXJvc181MjE=,size_16,color_FFFFFF,t_70)
+
 # 核心代码
 ## main.c
 
