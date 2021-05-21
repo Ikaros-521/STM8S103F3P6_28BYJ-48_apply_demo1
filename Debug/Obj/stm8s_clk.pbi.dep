@@ -1,0 +1,23 @@
+stm8s_clk.pbi: \
+  F:\BaiduNetdiskDownload\STM8\Demo\STM8S_StdPeriph_Driver\src\stm8s_clk.c \
+  F:\BaiduNetdiskDownload\STM8\Demo\STM8S_StdPeriph_Driver\inc\stm8s_clk.h \
+  F:\BaiduNetdiskDownload\STM8\Demo\STM8S_StdPeriph_Driver\inc/stm8s.h \
+  F:\BaiduNetdiskDownload\STM8\Demo\stm8s_conf.h \
+  F:\BaiduNetdiskDownload\STM8\Demo\STM8S_StdPeriph_Driver\inc\stm8s.h \
+  F:\BaiduNetdiskDownload\STM8\Demo\STM8S_StdPeriph_Driver\inc\stm8s_adc1.h \
+  F:\BaiduNetdiskDownload\STM8\Demo\STM8S_StdPeriph_Driver\inc\stm8s_awu.h \
+  F:\BaiduNetdiskDownload\STM8\Demo\STM8S_StdPeriph_Driver\inc\stm8s_beep.h \
+  F:\BaiduNetdiskDownload\STM8\Demo\STM8S_StdPeriph_Driver\inc\stm8s_exti.h \
+  F:\BaiduNetdiskDownload\STM8\Demo\STM8S_StdPeriph_Driver\inc\stm8s_flash.h \
+  F:\BaiduNetdiskDownload\STM8\Demo\STM8S_StdPeriph_Driver\inc\stm8s_gpio.h \
+  F:\BaiduNetdiskDownload\STM8\Demo\STM8S_StdPeriph_Driver\inc\stm8s_i2c.h \
+  F:\BaiduNetdiskDownload\STM8\Demo\STM8S_StdPeriph_Driver\inc\stm8s_itc.h \
+  F:\BaiduNetdiskDownload\STM8\Demo\STM8S_StdPeriph_Driver\inc\stm8s_iwdg.h \
+  F:\BaiduNetdiskDownload\STM8\Demo\STM8S_StdPeriph_Driver\inc\stm8s_rst.h \
+  F:\BaiduNetdiskDownload\STM8\Demo\STM8S_StdPeriph_Driver\inc\stm8s_spi.h \
+  F:\BaiduNetdiskDownload\STM8\Demo\STM8S_StdPeriph_Driver\inc\stm8s_tim1.h \
+  F:\BaiduNetdiskDownload\STM8\Demo\STM8S_StdPeriph_Driver\inc\stm8s_tim2.h \
+  F:\BaiduNetdiskDownload\STM8\Demo\STM8S_StdPeriph_Driver\inc\stm8s_tim4.h \
+  F:\BaiduNetdiskDownload\STM8\Demo\STM8S_StdPeriph_Driver\inc\stm8s_uart1.h \
+  F:\BaiduNetdiskDownload\STM8\Demo\STM8S_StdPeriph_Driver\inc\stm8s_wwdg.h \
+  D:\IAR\stm8\inc\c\intrinsics.h
